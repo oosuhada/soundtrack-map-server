@@ -1,0 +1,10 @@
+rootProject.name = 'backend'
+include (
+        'streetdrop-admin',
+        'streetdrop-api',
+        'streetdrop-batch',
+        'streetdrop-common',
+        'streetdrop-domain',
+        'streetdrop-admin:streetdrop-admin-server',
+)
+findProject(':streetdrop-admin:streetdrop-admin-server')?.name = 'streetdrop-admin-server'
